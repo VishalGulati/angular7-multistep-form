@@ -1,0 +1,8 @@
+<form class="form-horizontal shipping-option-form col-xs-12" [formGroup]="shippingOptionForm" (ngSubmit)="onSubmit(shippingOptionForm)">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="shipping-option">Shipping Option</label>
+        <div class="col-sm-10">
+            <input class="form-control" formControlName="shippingOption" placeholder="Shipping Option">
+        </div>
+    </div>
+</form>

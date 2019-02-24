@@ -1,0 +1,10 @@
+.receiver-form {
+    margin-top: 20px;
+    label.control-label {
+        text-align: left;
+        min-width: 50px;
+    }
+    input.ng-invalid.ng-touched {
+        border: 1px solid red;
+    }
+}

@@ -1,0 +1,7 @@
+<app-header>
+</app-header>
+<app-progress-bar></app-progress-bar>
+<wizard [wizardContext]="shippingInfoObj" (complete)="generateShippingLabel($event)">
+    <wizard-header></wizard-header>
+    <wizard-steps></wizard-steps>
+</wizard>

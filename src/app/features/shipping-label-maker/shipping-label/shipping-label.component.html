@@ -1,0 +1,14 @@
+<h3>{{pageHeader}}</h3>
+<div *ngIf="finalDetails"  class="entity">
+    <div *ngFor="let header of ['from', 'to']">
+        <h4>{{ header }}</h4>
+        <div *ngFor="let key of getKeys(finalDetails[header])">
+            <span>{{key}}</span>:
+            <span>{{getNestedDetails(header,key)}}</span>
+        </div>
+    </div>
+    <div *ngFor="let header of ['weight', 'shippingOption']">
+        <h4>{{ header }}</h4>
+        <span>{{finalDetails[header]}}</span>
+    </div>
+</div>

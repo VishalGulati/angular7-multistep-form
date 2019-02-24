@@ -1,0 +1,7 @@
+<ng-content></ng-content>
+<p class="warning-msg" *ngIf="showCompleteBtn && !isformValid"> 
+    Your form is invalid. Kindly go back and provide the necessary details.
+</p>
+<button *ngIf="showCompleteBtn" [disabled]="!isformValid" class="btn btn-primary" (click)="generateShippingLabel()">
+    Complete
+</button>
